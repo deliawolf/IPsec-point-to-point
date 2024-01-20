@@ -2,6 +2,13 @@
 
 same like https://github.com/deliawolf/Static-VTI-Point-to-Point-Tunnels . but less explanation only configuration.
 
+Step is
+1. Configure crypto ISAKMP Policy
+2. Create the ISAKMP Key
+3. Define IPSec tranform
+4. Define IPSec Profile
+5. Define the Tunnel
+
 IPsec Point to Point (R1 to R2) Tunnel IP R1 to R2 (172.16.34.4/28 to 172.16.34.3/28)
 
 1. Create an ISAKMP Policy on Both Routers

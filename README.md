@@ -6,6 +6,7 @@ IPsec Point to Point (R1 to R2)
 
 1. Create an ISAKMP Policy on Both Routers
 
+  - Tunnel IP R1 to R2 (172.16.34.4/28 to 172.16.34.3/28)
   - ISAKMP authentication type: pre-shared key
   - ISAKMP hash: SHA 512
   - ISAKMP encryption algorithm: AES 256
@@ -31,7 +32,7 @@ R2(config-isakmp)#lifetime 7200
 R2(config-isakmp)#group 15
 ```
 2. Create Pre-shared Key
-  - ISAKMP pre-shared key: cisco123 (the address is ip from other end. in here it mean the ip from R2)
+  - ISAKMP pre-shared key: cisco123 (the address is ip from other end. R1 using R2 ip as destination and vise versa)
 
 R1:
 ```
